@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href="..">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
+    </script>
+    <meta name="description" content="Conference Template">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Challenge | IsaacOpenWorld</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <img src="assets/banner.jpg" alt="Conference Template Banner">
+        <div class="top-left">
+            <span class="title1">Isaac</span><span class="title2">OpenWorld</span>
+        </div>
+        <div class="bottom-center">
+            Benchmarking Embodied Agents in Open World Environments 
+            <br> NeurIPS 2025
+        </div>
+    </div>
+
+    <table class="navigation">
+        <tr>
+            <td class="navigation">
+                <a title="Home Page" href=".">Home</a>
+            </td>
+            <td class="navigation">
+                <a class="current" title="Challenge" href="challenge">Challenge</a>
+            </td>
+            <td class="navigation">
+                <a title="Participate" href="participate">Participate</a>
+            </td>
+            <td class="navigation">
+                <a title="Leaderboard" href="leaderboard">Leaderboard</a> 
+            </td>
+            <td class="navigation">
+                <a title="Organizers" href="organizers">Organizers</a> 
+            </td>
+        </tr>
+    </table>
+
+    <h2>Challenge</h2>
+
+    <h2>Resources and Datasets</h2>
+    
+    The baseline solutions for the TRAIN scenarios will be provided as teleoperated (human-collected) demonstrations 
+    that prove feasibility for each task. Note that in general the solutions to scenarios can require a mixture of high-level (slow) reasoning, 
+    intermediate level planning, and low-level (fast) control. All datasets, reasoning models, and control policies 
+    are downloadable via huggingface hub.
+    <br>
+    <br>
+    The starting kit containing the simulator, assets, APIs, and documentation on the scenarios as well as the required 
+    datasets, models, and policies will be released on <u><b>June 1st</b></u>. There will be code stubs so that participants can get 
+    started quickly as well as evaluate on VALIDATION set locally. 
+
+    <h2>Evaluation</h2>
+    There are two classes of metrics that will act as the performance indicators for the challenge. 
+
+    <br>
+    <br>
+
+    <u><b>Task-specific Metrics:</b></u>
+    <br>
+    Inherently sparse and directly corresponding to the final states expected of the simulated world. 
+    An example is bringing a difficult to locate tool from the workshop building to the kitchen and using it to open a stuck cabinet. 
+    The metric is simply that the cabinet is past a threshold in its continuous state that is considered "open".
+
+    <br>
+    <br>
+    <u><b>General Metrics:</b></u>
+    <br>
+    Continuous signals that are useful for measuring behavior characteristics, irrespective of task completion. 
+    These can be measured quantities including time to complete the objective, total distance traversed, 
+    semantic alignment of world exploration with the initial prompt, number of self-recoveries, amongst others.
+
+</body>
+</html>
+
